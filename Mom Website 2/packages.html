@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/queries.css" />
+    <link rel="stylesheet" href="CSS/general.css" />
+    <link rel="stylesheet" href="CSS/package.css" />
+    <script
+      src="https://kit.fontawesome.com/c59c3e0d38.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>The Clarity Coach</title>
+  </head>
+  <body>
+    <div id="container">
+      <header class="header sticky">
+        <a href="index.html"
+          ><img
+            class="logo"
+            alt="Clarity Coaching Logo"
+            src="Img/circle-logo-png.webp"
+        /></a>
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li>
+              <a class="main-nav-link" href="index.html">HOME</a>
+            </li>
+            <li>
+              <a class="main-nav-link" href="about.html">ABOUT ME</a>
+            </li>
+            <li>
+              <a class="main-nav-link" href="contact.html">CONTACT</a>
+            </li>
+            <li>
+              <a class="main-nav-link" href="packages.html">PACKAGES</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </header>
+
+      <button class="btn open-modal">Why is my pricing done this way?</button>
+
+      <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <p class="modal-text">
+          I believe looking deeper at life through coaching is valuable and
+          should be affordable to anyone willing to put forth the effort. I grew
+          up with a scarcity mentality and the idea that my children's needs
+          were above my own. This caused me to suffer and I wasn't capable of
+          being the mother I wanted to be.
+        </p>
+        <p class="modal-text">
+          It was only when I invested in myself that I gained the skills and
+          knowledge to take care of myself and my children. I know there are
+          others who have a hard time investing in themselves and for this
+          reason I am offering a sliding pay scale.
+        </p>
+        <p class="modal-text">
+          <strong
+            >I trust you to pay what you can afford and what feels right to you.
+            No matter what you pay you will get the same services.
+          </strong>
+        </p>
+        <p class="modal-text">
+          I strongly believe from personal experience that paying for a package
+          deal is the best way to make the most progress as it helps you commit
+          to following through, but I am also open to scheduling one session at
+          a time.
+        </p>
+      </div>
+      <div class="overlay hidden"></div>
+
+      <div id="packages">
+        <div class="package">
+          <p class="package-heading">1 Hour Session</p>
+          <div class="pack-con">
+            <p class="span-con">$<span id="span-one">60</span></p>
+
+            <div class="package-sliders">
+              <p class="package-minmax">$30</p>
+              <div class="range-slider">
+                <input
+                  type="range"
+                  min="30"
+                  max="90"
+                  value="60"
+                  step="5"
+                  class="package-slider"
+                  id="slider-one"
+                />
+              </div>
+              <p class="package-minmax">$90</p>
+            </div>
+            <p class="rec-price rec-price-one">Recommended Price</p>
+          </div>
+          <a href="contact.html" class="btn price-btn">Choose Price</a>
+        </div>
+        <div class="package">
+          <p class="package-heading">6 Sessions</p>
+          <div class="pack-con">
+            <p class="span-con">$<span id="span-two">360</span></p>
+
+            <div class="package-sliders">
+              <p class="package-minmax">$180</p>
+              <div class="range-slider">
+                <input
+                  type="range"
+                  min="180"
+                  max="540"
+                  value="360"
+                  step="10"
+                  class="package-slider"
+                  id="slider-two"
+                />
+              </div>
+              <p class="package-minmax">$540</p>
+            </div>
+            <p class="rec-price rec-price-two">Recommended Price</p>
+          </div>
+          <a href="contact.html" class="btn price-btn">Choose Price</a>
+        </div>
+        <div class="package">
+          <p class="package-heading">12 Sessions</p>
+          <div class="pack-con">
+            <p class="span-con">$<span id="span-three">720</span></p>
+
+            <div class="package-sliders">
+              <p class="package-minmax">$360</p>
+              <div class="range-slider">
+                <input
+                  type="range"
+                  min="360"
+                  max="1080"
+                  value="720"
+                  step="10"
+                  class="package-slider"
+                  id="slider-three"
+                />
+              </div>
+              <p class="package-minmax">$1080</p>
+            </div>
+            <p class="rec-price rec-price-three">Recommended Price</p>
+          </div>
+          <a href="contact.html" class="btn price-btn">Choose Price</a>
+        </div>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="home.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

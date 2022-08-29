@@ -1,0 +1,172 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #3f8894;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+}
+.main-nav-list {
+  display: flex;
+  font-size: 3rem;
+  gap: 3rem;
+  list-style: none;
+  margin: 0 5rem;
+}
+.main-nav {
+  display: flex;
+}
+.main-nav-link {
+  color: #fff;
+  padding: 2rem;
+  text-decoration: none;
+}
+.logo {
+  width: 10rem;
+  margin: 2rem 5rem;
+}
+
+/* MOBILE */
+.btn-mobile-nav {
+  margin-right: 5rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: white;
+}
+.icon-mobile-nav[name='close-outline'] {
+  display: none;
+}
+/* STICKY */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/* HERO */
+
+#hero {
+  background-image: url(../img/full-bloom.webp);
+  padding-bottom: 10rem;
+  box-shadow: -1px 0px 23px 0px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  width: 100%;
+}
+#hero-flex {
+  display: flex;
+  justify-content: center;
+  padding-top: 15rem;
+  align-items: center;
+}
+
+#happy-woman {
+  border-radius: 50%;
+  margin: 5rem;
+}
+
+#hero-head {
+  width: 80rem;
+  margin: 5rem;
+}
+
+#btn-flex {
+  display: flex;
+  gap: 1rem;
+}
+
+/* QUOTE */
+
+#quote {
+  width: 100%;
+  margin: 30rem auto;
+}
+#quote-text {
+  font-family: 'Satisfy', cursive;
+  font-size: 6.5rem;
+}
+
+/* WELCOME */
+
+#welcome {
+  box-shadow: -1px 0px 23px 0px rgba(0, 0, 0, 0.2);
+  width: auto;
+  margin: auto;
+  border-radius: 25px;
+  padding: 10rem;
+  background-image: url(../img/circles-light.webp);
+}
+#welcome-quote {
+  width: 100%;
+  font-size: 8rem;
+  text-align: center;
+}
+#welcome-grid {
+  gap: 5rem;
+  margin-top: 5rem;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 10rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.z-text {
+  font-size: 5rem;
+  width: 100%;
+}
+.z-photo {
+  width: 100%;
+}
+
+/* REFERRALS */
+
+#referrals {
+  background-image: url(../img/herringbone.webp);
+  margin-top: 20rem;
+  border-radius: 25px;
+  padding: 5rem;
+  box-shadow: -1px 0px 23px 0px rgba(0, 0, 0, 0.1);
+}
+#referrals-photos {
+  justify-content: space-around;
+  margin: 5rem 0;
+}
+.referrals-headshots {
+  border-radius: 50%;
+  width: 25rem;
+}
+#referrals-text {
+  justify-content: space-around;
+}
+.referrals-para {
+  width: 60rem;
+  padding: 0 5rem;
+  font-size: 3rem;
+}
+#referral-names {
+  justify-content: space-around;
+}
+#referral-name {
+  text-align: center;
+}
+
+/* TO TOP BUTTON */
+
+#up-arrow {
+  font-size: 3rem;
+}
+#to-top {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+}

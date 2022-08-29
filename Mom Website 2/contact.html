@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/queries.css" />
+    <link rel="stylesheet" href="CSS/general.css" />
+    <link rel="stylesheet" href="CSS/contact.css" />
+    <script
+      src="https://kit.fontawesome.com/c59c3e0d38.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>The Clarity Coach</title>
+  </head>
+  <body>
+    <div id="container">
+      <header class="header sticky">
+        <a href="index.html"
+          ><img
+            class="logo"
+            alt="Clarity Coaching Logo"
+            src="Img/circle-logo-png.webp"
+        /></a>
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li>
+              <a class="main-nav-link" href="index.html">HOME</a>
+            </li>
+            <li>
+              <a class="main-nav-link" href="about.html">ABOUT ME</a>
+            </li>
+            <li>
+              <a class="main-nav-link" href="contact.html">CONTACT</a>
+            </li>
+            <li>
+              <a class="main-nav-link" href="packages.html">PACKAGES</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </header>
+      <div id="contact-container">
+        <h1 id="connect" class="heading">CONNECT WITH ME</h1>
+        <div id="contact-section">
+          <div id="contact-flex">
+            <form
+              action="https://formspree.io/f/mvoygvzz"
+              method="POST"
+              id="contact-form"
+            >
+              <label>
+                Name
+                <input
+                  type="text"
+                  class="contact-input"
+                  name="name"
+                  placeholder="Jane Doe"
+                />
+              </label>
+              <label>
+                Email
+                <input
+                  type="email"
+                  class="contact-input"
+                  name="email"
+                  placeholder="example@email.com"
+                />
+              </label>
+              <label>
+                Phone
+                <input
+                  type="number"
+                  class="contact-input"
+                  name="phone-number"
+                  placeholder="(123) 456-7890"
+                />
+              </label>
+              <label>
+                Subject
+                <input
+                  type="text"
+                  class="contact-input"
+                  name="subject"
+                  placeholder="Your subject"
+                />
+              </label>
+              <label>
+                Message
+                <textarea
+                  class="contact-input"
+                  name="message"
+                  placeholder="Your message"
+                  rows="6"
+                ></textarea>
+              </label>
+
+              <div class="sessions-container">
+                <label id="choose-sessions">Choose Number of Sessions:</label>
+
+                <select
+                  id="sessions-selector"
+                  name="sessions"
+                  onchange="getSelectValue () ;"
+                >
+                  <option value="no-session" selected>No Session</option>
+                  <option value="one-session">1 Session</option>
+                  <option value="six-sessions">6 Sessions</option>
+                  <option value="twelve-sessions">12 Sessions</option>
+                </select>
+                <div id="slider-container">
+                  <input
+                    type="range"
+                    min="30"
+                    max="90"
+                    value="50"
+                    class="slider hidden"
+                    id="myRange"
+                    step="5"
+                  />
+                </div>
+                <p class="paragraph hidden">Value: $<span id="value"></span></p>
+              </div>
+              <textarea id="session-value" name="session-value"></textarea>
+              <button type="submit" id="send-button" class="btn">Send</button>
+            </form>
+          </div>
+          <div id="reach-me">
+            <div id="reach-me-container">
+              <h1 id="reach-header">Reach Me</h1>
+              <p class="sub-heading reach-text">Phone Number</p>
+              <p class="paragraph reach-text">(435) 503 - 2202</p>
+              <p class="sub-heading reach-text">Email Address</p>
+              <p class="paragraph reach-text">lisaremund22@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="contact.js"></script>
+    <script src="home.js"></script>
+  </body>
+</html>

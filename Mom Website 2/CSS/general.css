@@ -1,0 +1,98 @@
+/* COLORS
+#ef8888
+#afd6dc
+#f9e04c
+*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+}
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+  position: relative;
+}
+html {
+  font-size: 62.5%;
+}
+img {
+  width: 50rem;
+}
+.flex {
+  display: flex;
+}
+/* TEXT AND FONT SETTINGS */
+.heading {
+  font-size: 10rem;
+}
+.sub-heading {
+  font-size: 5rem;
+}
+.paragraph {
+  font-size: 3rem;
+}
+.center-text {
+  text-align: center;
+}
+center-item {
+  margin: 0 auto;
+}
+.emphasis {
+  font-style: italic;
+}
+.highlight {
+  background-color: #f9df4cb7;
+}
+.no-text-dec {
+  text-decoration: none;
+}
+/* BUTTONS */
+.main-nav-link:hover {
+  background-color: #ef8888;
+  color: black;
+  border-radius: 25px;
+  transition: all 0.3s;
+}
+.btn,
+.btn:link,
+.btn:visited {
+  background-color: #c56060;
+  border: none;
+  font-size: 4rem;
+  padding: 2rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: -1px 0px 23px 0px rgba(0, 0, 0, 0.2);
+}
+.btn:hover {
+  background-color: #cb3a3a;
+  transition: all 0.3s;
+}
+.btn-secondary,
+.btn-secondary:link,
+.btn-secondary:visited {
+  background-color: #ef888893;
+  border: none;
+  font-size: 4rem;
+  padding: 2rem;
+  color: black;
+  text-decoration: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: -1px 0px 23px 0px rgba(0, 0, 0, 0.1);
+}
+.btn-secondary:hover {
+  background-color: #f9bfbf;
+  transition: all 0.3s;
+}
+.hidden {
+  display: none;
+}

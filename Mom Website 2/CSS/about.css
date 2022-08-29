@@ -1,0 +1,26 @@
+#about-me {
+  margin-top: 20rem;
+}
+#about-header {
+  text-align: center;
+}
+#about-flex {
+  box-shadow: -1px 0px 23px 0px rgba(0, 0, 0, 0.2);
+  background-color: #afd6dc;
+  background-image: url(../img/blue-snow.webp);
+}
+#clarity-img {
+  float: left;
+
+  width: 40rem;
+  opacity: 95%;
+  border-radius: 50%;
+  margin: 5rem;
+}
+#about-text {
+  margin: 5rem;
+}
+.about-text {
+  font-size: 3rem;
+  padding-top: 2rem;
+}
